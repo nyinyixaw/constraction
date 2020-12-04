@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- jquery link -->
+    <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <script>
+        $(document).ready(function(){
+            $(".button").click(function(){
+                var name = $(this).attr("data-filter");
+                if(name == "all"){
+                    $(".filiter").show("2000");
+                }
+                else{
+                    $(".filter").not("."+name).hide("2000");
+                    $(".filter").filter("."+name).show("2000");
+                }
+            });
+            $(".navigation a").click(function(){
+                $(this).addClass("active").siblings().removeClass("active")
+            })
+        });
+    </script>
+</head>
+<body>
+    <div class="container" onscroll="change();">
+        <!-- headerstart -->
+        <div class="header">
+            <div class="back">
+                <div id="nav">
+                    <div class="logo">
+                        <span style="color: #fff;"><span style="color: darkcyan;">X</span><span 
+                        >-</span>ppn</span>
+                    </div>
+                    <div class="logolinks">
+                        <ul>
+                            <li>
+                                <a href="">Home</a>
+                            </li>
+                            <li>
+                                <a href="">About</a>
+                            </li>
+                            <li>
+                                <a href="">Services</a>
+                                <div class=" menu-bar">
+                                    <ul>
+                                        <li>
+                                            <a href="">Design</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Graphic</a>
+                                        </li>
+                                        <li>
+                                            <a href="">skill</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="">Blog</a>
+                            </li>
+                            <li>
+                                <a href="">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="navv">
+                    <div class="logo">
+                        <span style="color: #000;"><span style="color: darkcyan;">X</span><span 
+                        >-</span>ppn</span>
+                    </div>
+                    <div class="logolinks">
+                        <ul>
+                            <li>
+                                <a href="">Home</a>
+                            </li>
+                            <li>
+                                <a href="">About</a>
+                            </li>
+                            <li>
+                                <a href="">Services</a>
+                                <div class=" menu-bar">
+                                    <ul>
+                                        <li>
+                                            <a href="">Design</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Graphic</a>
+                                        </li>
+                                        <li>
+                                            <a href="">skill</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="">Blog</a>
+                            </li>
+                            <li>
+                                <a href="">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-text">
+                    <h1 style="color: #fff;">WE ARE <span style="color: darkcyan;">CREATIVE</span> </h1>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat maiores, placeat laborum commodi accusamus est odit eligendi tenetur quis quibusdam amet quia soluta alias sit nemo assumenda. Repellat, aliquid architecto.</P>
+                    <a href="" class="special">Learn more</a>
+                    <a href="" class="atenst">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <!-- headerend -->
+        <div class="wapper">
+            <div class="wappertext">
+                <span>welcome to X-ppn</span>
+                <h1>we are creative ggital agency</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A reprehenderit voluptate tempora vel eveniet porro placeat ex similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+            <div class="accoding">
+                <div class="acc-pic">
+                    <img src="image/accpic.jpg" alt="">
+                </div>
+                <div class="accodinglist">
+                    <div class="item" id="item1">
+                        <a href="#item1" class="front-text">
+                            <span>
+                                Lorem ipsum dolor, sit amet consectetur. 
+                            </span>
+                            <i class="fas fa-key icon"></i>
+                        </a>
+                        <p class="back-text">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam corrupti est, molestiae ad dolorem ipsa nobis odit commodi quas odio quaerat modi provident omnis dicta inventore 
+                        </p>
+                    </div>
+                    <div class="item" id="item2">
+                        <a href="#item2" class="front-text">
+                        <span> 
+                            Lorem ipsum dolor, sit amet consectetur.
+                        </span>
+                          <i class="fas fa-key icon"></i>
+                        </a>  
+                        <p class="back-text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit iste quisquam similique debitis, labore ipsum hic veritatis magni? Explicabo tempora asperiores in atque exercitationem non qui, 
+                        </p>
+                    </div>
+                    <div class="item" id="item3">
+                        <a href="#item3" class="front-text">
+                        <span> 
+                            Lorem ipsum dolor, sit amet consectetur.
+                        </span>
+                          <i class="fas fa-key icon"></i>
+                        </a>  
+                        <p class="back-text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit iste quisquam similique debitis, labore ipsum hic veritatis magni? Explicabo tempora asperiores in atque exercitationem non qui,
+                        </p>
+                    </div>
+                    <div class="item" id="item4">
+                        <a href="#item4" class="front-text">
+                        <span>
+                             Lorem ipsum dolor, sit amet consectetur.
+                        </span>
+                        <i class="fas fa-key icon"></i>
+                        </a>  
+                        <p class="back-text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit iste quisquam similique debitis, labore ipsum hic veritatis magni? Explicabo tempora asperiores in atque exercitationem non qui,
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- letus start -->
+        <div class="letus">
+            <div class="letuscopy">
+                <span>Let us help you grow your online business</span>
+               <div class="letuslink"> <a href="" >contact us</a></div>
+            </div>
+        </div>
+        <!-- letus end -->
+        <!-- services start -->
+        <div class="ourservice">
+            <div class="ourservice-text">
+                <span>Our <span class="import">Services </span></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos error unde iure, autem recusandae quas velit omnis aut rerum neque quod repudiandae! Facilis eveniet, fugit facere nesciunt sequi nobis illum!</p>
+            </div>
+            <div class="services-card">
+                <div class="service">
+                    <div class="card">
+                        <div class="hovercolor"><i class="fas fa-biking" id="fa"></i></div>
+                        <h3>UI/UX Design</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit perferendis praesentium eius a alias blanditiis, </p>
+                    </div>
+                    <div class="card">
+                        <div class="hovercolor"><i class="far fa-flag" id="fa"></i></div>
+                        <h3>UI/UX Design</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit perferendis praesentium eius a alias blanditiis, </p>
+                    </div>
+                    <div class="card">
+                        <div class="hovercolor"><i class="fas fa-brush" id="fa"  style="margin-left: 5px;"></i></div>
+                        <h3>UI/UX Design</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit perferendis praesentium eius a alias blanditiis, </p>
+                    </div>
+                    <div class="card">
+                        <div class="hovercolor"><i class="fas fa-broadcast-tower" id="fa" style="margin-right: 30px;" ></i></div>
+                        <h3>UI/UX Design</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit perferendis praesentium eius a alias blanditiis, </p>
+                    </div>
+                    <div class="card">
+                       <div class="hovercolor"> <i class="fas fa-truck-monster" id="fa" ></i></div>
+                        <h3>UI/UX Design</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit perferendis praesentium eius a alias blanditiis, </p>
+                    </div>
+                    <div class="card">
+                        <div class="hovercolor"><i class="fas fa-tools" id="fa" ></i></div>
+                        <h3>UI/UX Design</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit perferendis praesentium eius a alias blanditiis, </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- services end -->
+        <!-- bussiness start -->
+        <div class="business">
+            <div class="buss">
+                <span>Let's Do Something Awsome Together</span>
+                <h1>We are the best in business consultancy</h1>
+                <a href="">Contact us</a>
+            </div>  
+        </div>
+        <!-- business end -->
+        <!-- our work  start-->
+        <div class="ourwork">
+            <div class="work-text">
+                <span>Our <span style="background-color: darkcyan; font-weight: 1200; padding: 2px 5px; border-radius: 3px ; color: #fff;">Works</span></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quisquam porro laboriosam delectus. Nulla quaerat unde eum sit aperiam totam sequi provident officiis recusandae? Quibusdam illo.</p>
+            </div>
+            <div class="content">
+                <div class="navigation">
+                    <a href="#" data-filter="all" class="button active">All</a>
+                    <a href="#" data-filter="one" class="button">One</a>
+                    <a href="#" data-filter="two" class="button">Two</a>
+                    <a href="#" data-filter="three" class="button">Three</a>
+                </div>
+                <div class="imgcontainer">
+                    <div class="filter one two">
+                        <img src="image/g2.jpg" alt="">
+                    </div>
+                    <div class="filter one three  ">
+                        <img src="image/a2.jpg" alt="">
+                    </div>
+                    <div class="filter one two ">
+                        <img src="image/g1.jpg" alt="">
+                    </div>
+                    <div class="filter one three">
+                        <img src="image/a4.jpg" alt="">
+                    </div>
+                    <div class="filter two three">
+                        <img src="image/g5.jpg" alt="">
+                    </div>
+                    <div class="filter one two ">
+                        <img src="image/g4.jpg" alt="">
+                    </div>
+                    <!-- <div class="filter two  ">
+                        <img src="image/a3.jpg" alt="">
+                    </div>
+                    <div class="filter two ">
+                        <img src="image/g6.jpg" alt="">
+                    </div>
+                    <div class="filter three ">
+                        <img src="image/a1.jpg" alt="">
+                    </div>
+                    <div class="filter three ">
+                        <img src="image/g3.jpg" alt="">
+                    </div>
+                    <div class="filter three ">
+                        <img src="image/g5.jpg" alt="">
+                    </div>
+                    <div class="filter two ">
+                        <img src="image/g7.jpg" alt="">
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- our work end -->
+        <!-- client start -->
+        <div class="ourclient">
+            <div class="work-text">
+                <span>Clients <span style="background-color: darkcyan; font-weight: 1200; padding: 2px 10px; border-radius: 3px ; color: #fff;">Says</span></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quisquam porro laboriosam delectus. Nulla quaerat unde eum sit aperiam totam sequi provident officiis recusandae? Quibusdam illo.</p>
+            </div>
+            <div class="slider">
+                <div class="car">
+                    <div class="clients">
+                        <div class="client">
+                            <div class="photo">
+                                <img src="image/pop1 (3).jpg" alt="">
+                            </div>
+                            <div class="client-text">
+                                <span>David Wood </span><span style="color: #000; font-size: 18px;">Architext</span>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla ad doloribus cumque suscipit quam eos culpa eius eaque earum debitis, excepturi, numquam in saepe cum, illo distinctio! Veritatis, possimus non?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clients">
+                        <div class="client">
+                            <div class="photo">
+                                <img src="image/pop1 (2).jpg" alt="">
+                            </div>
+                            <div class="client-text">
+                                <span>David Wood </span><span style="color: #000; font-size: 18px;">Architext</span>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla ad doloribus cumque suscipit quam eos culpa eius eaque earum debitis, excepturi, numquam in saepe cum, illo distinctio! Veritatis, possimus non?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clients">
+                        <div class="client">
+                            <div class="photo">
+                                <img src="image/pop1 (1).jpg" alt="">
+                            </div>
+                            <div class="client-text">
+                                <span>David Wood </span><span style="color: #000; font-size: 18px;">Architext</span>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla ad doloribus cumque suscipit quam eos culpa eius eaque earum debitis, excepturi, numquam in saepe cum, illo distinctio! Veritatis, possimus non?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clients">
+                        <div class="client">
+                            <div class="photo">
+                                <img src="image/pop1 (3).jpg" alt="">
+                            </div>
+                            <div class="client-text">
+                                <span>David Wood </span><span style="color: #000; font-size: 18px;">Architext</span>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla ad doloribus cumque suscipit quam eos culpa eius eaque earum debitis, excepturi, numquam in saepe cum, illo distinctio! Veritatis, possimus non?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clients">
+                        <div class="client">
+                            <div class="photo">
+                                <img src="image/pop1 (1).jpg" alt="">
+                            </div>
+                            <div class="client-text">
+                                <span>David Wood </span><span style="color: #000; font-size: 18px;">Architext</span>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla ad doloribus cumque suscipit quam eos culpa eius eaque earum debitis, excepturi, numquam in saepe cum, illo distinctio! Veritatis, possimus non?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- client end -->
+        <!-- our Teamstart -->
+        <div class="ourteams">
+            <div class="teams-text">
+                <span>Our <span style="background-color: darkcyan; font-weight: 1200; padding: 2px 10px; border-radius: 3px ; color: #fff;">Teams</span></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quisquam porro laboriosam delectus. Nulla quaerat unde eum sit aperiam totam sequi provident officiis recusandae? Quibusdam illo.</p>
+            </div>
+            <div class="team">
+                <div>
+                    <div class="team-card">
+                        <div class="frontteam">
+                            <img src="image/team1.jpg" alt="">
+                        </div>
+                        <div class="backteam">
+                            <span>
+                                <i class=" fab fa-facebook " id="fab"></i>
+                            </span>
+                            <span>
+                                <i class=" fab fa-twitter " id="fab"></i>
+                            </span>
+                            <span>
+                                <i class=" fab fa-linkedin " id="fab"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="teamstext">
+                        <h3>Sedlif Caner</h3>
+                        <p>Lorem ipsum dolor sit, </p>
+                    </div>
+                    
+                </div>
+                <div>
+                    <div class="team-card">
+                        <div class="frontteam">
+                            <img src="image/team2.jpg" alt="">
+                        </div>
+                        <div class="backteam">
+                            <span>
+                                <i class=" fab fa-facebook " id="fab"></i>
+                            </span>
+                            <span>
+                                <i class=" fab fa-twitter " id="fab"></i>
+                            </span>
+                            <span>
+                                <i class=" fab fa-linkedin " id="fab"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="teamstext">
+                        <h3>Sedlif Caner</h3>
+                        <p>Lorem ipsum dolor sit, </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="team-card">
+                        <div class="frontteam">
+                            <img src="image/team3.jpg" alt="">
+                        </div>
+                        <div class="backteam">
+                            <span>
+                                <i class=" fab fa-facebook " id="fab"></i>
+                            </span>
+                            <span>
+                                <i class=" fab fa-twitter " id="fab"></i>
+                            </span>
+                            <span>
+                                <i class=" fab fa-linkedin " id="fab"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="teamstext">
+                        <h3>Sedlif Caner</h3>
+                        <p>Lorem ipsum dolor sit, amet </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- our Teamend -->
+        <!-- our printing start -->
+        <div class="ourprinting">
+            <div class="work-text">
+                <span>Our <span style="background-color: darkcyan; font-weight: 1200; padding: 2px 10px; border-radius: 3px ; color: #fff;">Printing</span></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quisquam porro laboriosam delectus. Nulla quaerat unde eum sit aperiam totam sequi provident officiis recusandae? Quibusdam illo.</p>
+            </div>
+            <div class="printing">
+                <div class="printing-card">
+                    <div class="printing-m">
+                        <span class="sign" style="font-size: 35px;">$</span><span>25</span>
+                        <h5>Per Month</h5>
+                    </div>
+                    <div class="printing-b">
+                       <h3> BASIC</h3>
+                    </div>
+                    <div class="printing-p">
+                        <p style="margin-top: 30px;">2GB Disk Space</p>
+                        <p>512 MB memory</p>
+                        <p>5 Email Address</p>
+                        <p>10 Subdomains</p>
+                        <p>15 Domains</p>
+                        <p>Unlimited Support</p>
+                    </div>
+                </div>
+                <div class="printing-card">
+                    <div class="printing-m">
+                        <span class="sign" style="font-size: 35px;">$</span><span>45</span>
+                        <h5>Per Month</h5>
+                    </div>
+                    <div class="printing-b">
+                       <h3> BASIC</h3>
+                    </div>
+                    <div class="printing-p">
+                        <p style="margin-top: 30px;">2GB Disk Space</p>
+                        <p>512 MB memory</p>
+                        <p>5 Email Address</p>
+                        <p>10 Subdomains</p>
+                        <p>15 Domains</p>
+                        <p>Unlimited Support</p>
+                    </div>
+                </div>
+                <div class="printing-card">
+                    <div class="printing-m">
+                        <span class="sign" style="font-size: 35px;">$</span><span>50</span>
+                        <h5>Per Month</h5>
+                    </div>
+                    <div class="printing-b">
+                       <h3> BASIC</h3>
+                    </div>
+                    <div class="printing-p">
+                        <p style="margin-top: 30px;">2GB Disk Space</p>
+                        <p>512 MB memory</p>
+                        <p>5 Email Address</p>
+                        <p>10 Subdomains</p>
+                        <p>15 Domains</p>
+                        <p>Unlimited Support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- our printing end -->
+        <!-- our contact start -->
+        <div class="ourcontact">
+            <div class="work-text">
+                <span>Our <span style="background-color: darkcyan; font-weight: 1200; padding: 2px 10px; border-radius: 3px ; color: #fff;">Contact</span></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quisquam porro laboriosam delectus. Nulla quaerat unde eum sit aperiam totam sequi provident officiis recusandae? Quibusdam illo.</p>
+            </div>
+            <div class="contact">
+                <div class="left">
+                    <div>
+                        <span>Our Address</span>
+                        <p>1214, New Area, Old Road New Yoke</p>
+                    </div>
+                    <div>
+                        <span>Phone Number</span>
+                        <p>+021 123 456 765 , +021 345 763 265</p>
+                    </div>
+                    <div>
+                        <span>Our Email</span>
+                        <p>Domainname@gmail.com</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <input type="text" placeholder="Enter your full name*">
+                    <input type="text" placeholder="Enter your email*" style="margin-top: 20px;">
+                    <textarea name="" id="" cols="30" rows="10" value="Your Message">Your Message</textarea>
+                    <a href="">Send Message</a>
+                </div>
+            </div>
+        </div>
+        <!-- our contact end -->
+        <!-- footer start -->
+        <div class="footer">
+            <span> <i class="fab fa-facebook" id="soc"></i></span>
+            <span> <i class="fab fa-linkedin" id="soc"></i></span>
+            <span> <i class="fab fa-twitter" id="soc"></i></span>
+            <span> <i class="fab fa-youtube" id="soc"></i></span>
+            <p>@2020 Design by company</p>
+        </div>
+        <!-- footer end -->
+    </div>
+    <!---fontawsomelink-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>  
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
+ 
+
